@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ⚠️ СЮДА ПОТОМ ВСТАВИМ ССЫЛКУ НОВОГО ВОРКЕРА ⚠️
-    const WORKER_URL = 'https://crm-facebook.brelok2023.workers.dev'; // Пока старая для примера
+    const WORKER_URL = 'https://crm-ajo.brelok2023.workers.dev'; // Пока старая для примера
 
     // 3. --- ЭЛЕМЕНТЫ ---
     const form = document.getElementById('crmOrderForm');
