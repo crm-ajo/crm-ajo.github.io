@@ -191,7 +191,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 setTimeout(() => {
                     const fullLink = `https://ajodostavka.github.io/index.html?id=${orderId}`;
-                    linkInput.value = "Заповніть будь-ласка тут, дані для доставки щоб пришвидшити процес,або просто скиньте у чат:👍🌸 " + fullLink;
+                    linkInput.value = "Заповніть будь-ласка тут, дані для доставки щоб пришвидшити процесс,або просто скиньте у чат:👍🌸 " + fullLink;
                     linkContainer.style.display = 'block';
                 }, 500);
 
