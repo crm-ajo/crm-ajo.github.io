@@ -6,6 +6,23 @@
     <title>CRM | Квіти Замовлення</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> 
+    
+    <style>
+        .product-img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-right: 15px;
+            border: 1px solid #ddd;
+        }
+        /* Зберігаємо вирівнювання всередині лейблу */
+        .item-selector {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
 
@@ -13,7 +30,7 @@
         
        <section class="product-options" id="productList">
         
-        <a href="#" target="_blank" class="ghost-btn-card" title="Загрузить фото"><i class="fas fa-camera"></i></a>
+        <a href="#" target="_blank" class="ghost-btn-card" title="Завантажити фото"><i class="fas fa-camera"></i></a>
 
         <h2>🌸 Вибір Квітів</h2>
 
@@ -24,12 +41,13 @@
         </div>
 
         <div id="tab-roses" class="tab-content active">
-            <div class="product-item" data-id="r_101" data-name="101роза" data-price="5000">
+            <div class="product-item" data-id="r_101" data-name="101роза" data-price="3150">
                 <input type="checkbox" id="check-r101" class="product-checkbox" hidden>
                 <label for="check-r101" class="item-selector">
-                    <div class="img-placeholder">IMG</div> <div class="item-details">
+                    <img src="images/101 роза.jpg" alt="101 роза" class="product-img">
+                    <div class="item-details">
                         <span class="item-name">101 роза</span>
-                        <span class="item-price">5000 грн</span>
+                        <span class="item-price">3150 грн</span>
                     </div>
                 </label>
                 <div class="quantity-control">
@@ -37,74 +55,74 @@
                 </div>
             </div>
 
-            <div class="product-item" data-id="r_151" data-name="151роза" data-price="7500">
+            <div class="product-item" data-id="r_151" data-name="151роза" data-price="4500">
                 <input type="checkbox" id="check-r151" class="product-checkbox" hidden>
                 <label for="check-r151" class="item-selector">
-                    <div class="img-placeholder">IMG</div>
-                    <div class="item-details"><span class="item-name">151 роза</span><span class="item-price">7500 грн</span></div>
+                    <img src="images/151 роза.jpg" alt="151 роза" class="product-img">
+                    <div class="item-details"><span class="item-name">151 роза</span><span class="item-price">4500 грн</span></div>
                 </label>
                 <div class="quantity-control"><input type="number" class="qty-input" value="1" min="1" disabled></div>
             </div>
 
-            <div class="product-item" data-id="r_65" data-name="65роз" data-price="3200">
+            <div class="product-item" data-id="r_65" data-name="65роз" data-price="1850">
                 <input type="checkbox" id="check-r65" class="product-checkbox" hidden>
                 <label for="check-r65" class="item-selector">
-                    <div class="img-placeholder">IMG</div>
-                    <div class="item-details"><span class="item-name">65 роз</span><span class="item-price">3200 грн</span></div>
+                    <img src="images/65 роз.jpg" alt="65 роз" class="product-img">
+                    <div class="item-details"><span class="item-name">65 роз</span><span class="item-price">1850 грн</span></div>
                 </label>
                 <div class="quantity-control"><input type="number" class="qty-input" value="1" min="1" disabled></div>
             </div>
 
-            <div class="product-item" data-id="r_55" data-name="55роз" data-price="2700">
+            <div class="product-item" data-id="r_55" data-name="55роз" data-price="1650">
                 <input type="checkbox" id="check-r55" class="product-checkbox" hidden>
                 <label for="check-r55" class="item-selector">
-                    <div class="img-placeholder">IMG</div>
-                    <div class="item-details"><span class="item-name">55 роз</span><span class="item-price">2700 грн</span></div>
+                    <img src="images/55 роз.jpg" alt="55 роз" class="product-img">
+                    <div class="item-details"><span class="item-name">55 роз</span><span class="item-price">1650 грн</span></div>
                 </label>
                 <div class="quantity-control"><input type="number" class="qty-input" value="1" min="1" disabled></div>
             </div>
 
-            <div class="product-item" data-id="r_45" data-name="45роз" data-price="2200">
+            <div class="product-item" data-id="r_45" data-name="45роз" data-price="1500">
                 <input type="checkbox" id="check-r45" class="product-checkbox" hidden>
                 <label for="check-r45" class="item-selector">
-                    <div class="img-placeholder">IMG</div>
-                    <div class="item-details"><span class="item-name">45 роз</span><span class="item-price">2200 грн</span></div>
+                    <img src="images/45 роз.jpg" alt="45 роз" class="product-img">
+                    <div class="item-details"><span class="item-name">45 роз</span><span class="item-price">1500 грн</span></div>
                 </label>
                 <div class="quantity-control"><input type="number" class="qty-input" value="1" min="1" disabled></div>
             </div>
 
-            <div class="product-item" data-id="r_35" data-name="35роз" data-price="1700">
+            <div class="product-item" data-id="r_35" data-name="35роз" data-price="1290">
                 <input type="checkbox" id="check-r35" class="product-checkbox" hidden>
                 <label for="check-r35" class="item-selector">
-                    <div class="img-placeholder">IMG</div>
-                    <div class="item-details"><span class="item-name">35 роз</span><span class="item-price">1700 грн</span></div>
+                    <img src="images/35 роз.jpg" alt="35 роз" class="product-img">
+                    <div class="item-details"><span class="item-name">35 роз</span><span class="item-price">1290 грн</span></div>
                 </label>
                 <div class="quantity-control"><input type="number" class="qty-input" value="1" min="1" disabled></div>
             </div>
 
-            <div class="product-item" data-id="r_25" data-name="25роз" data-price="1200">
+            <div class="product-item" data-id="r_25" data-name="25роз" data-price="930">
                 <input type="checkbox" id="check-r25" class="product-checkbox" hidden>
                 <label for="check-r25" class="item-selector">
-                    <div class="img-placeholder">IMG</div>
-                    <div class="item-details"><span class="item-name">25 роз</span><span class="item-price">1200 грн</span></div>
+                    <img src="images/25 роз.jpg" alt="25 роз" class="product-img">
+                    <div class="item-details"><span class="item-name">25 роз</span><span class="item-price">930 грн</span></div>
                 </label>
                 <div class="quantity-control"><input type="number" class="qty-input" value="1" min="1" disabled></div>
             </div>
 
-            <div class="product-item" data-id="r_11" data-name="11роз" data-price="600">
+            <div class="product-item" data-id="r_11" data-name="11роз" data-price="450">
                 <input type="checkbox" id="check-r11" class="product-checkbox" hidden>
                 <label for="check-r11" class="item-selector">
-                    <div class="img-placeholder">IMG</div>
-                    <div class="item-details"><span class="item-name">11 роз</span><span class="item-price">600 грн</span></div>
+                    <img src="images/11 роз.jpg" alt="11 роз" class="product-img">
+                    <div class="item-details"><span class="item-name">11 роз</span><span class="item-price">450 грн</span></div>
                 </label>
                 <div class="quantity-control"><input type="number" class="qty-input" value="1" min="1" disabled></div>
             </div>
 
-            <div class="product-item" data-id="r_7" data-name="7роз" data-price="400">
+            <div class="product-item" data-id="r_7" data-name="7роз" data-price="370">
                 <input type="checkbox" id="check-r7" class="product-checkbox" hidden>
                 <label for="check-r7" class="item-selector">
-                    <div class="img-placeholder">IMG</div>
-                    <div class="item-details"><span class="item-name">7 роз</span><span class="item-price">400 грн</span></div>
+                    <img src="images/7 роз.jpg" alt="7 роз" class="product-img">
+                    <div class="item-details"><span class="item-name">7 роз</span><span class="item-price">370 грн</span></div>
                 </label>
                 <div class="quantity-control"><input type="number" class="qty-input" value="1" min="1" disabled></div>
             </div>
@@ -112,101 +130,101 @@
 
         <div id="tab-comp" class="tab-content">
             
-            <div class="product-item" data-id="c_srkrmal" data-name="Ср.Кр.Мал" data-price="800">
+            <div class="product-item" data-id="c_srkrmal" data-name="Ср.Кр.Мал" data-price="500">
                 <input type="checkbox" id="check-c1" class="product-checkbox" hidden>
                 <label for="check-c1" class="item-selector">
-                    <div class="img-placeholder">IMG</div>
-                    <div class="item-details"><span class="item-name">Ср.Кр.Мал</span><span class="item-price">800 грн</span></div>
+                    <img src="images/Ср.кр.мал.jpg" alt="Ср.Кр.Мал" class="product-img">
+                    <div class="item-details"><span class="item-name">Ср.Кр.Мал</span><span class="item-price">500 грн</span></div>
                 </label>
                 <div class="quantity-control"><input type="number" class="qty-input" value="1" min="1" disabled></div>
             </div>
 
-            <div class="product-item" data-id="c_fetrbig" data-name="ФетрБольш" data-price="1200">
+            <div class="product-item" data-id="c_fetrbig" data-name="ФетрБольш" data-price="600">
                 <input type="checkbox" id="check-c2" class="product-checkbox" hidden>
                 <label for="check-c2" class="item-selector">
-                    <div class="img-placeholder">IMG</div>
-                    <div class="item-details"><span class="item-name">Фетр Большой</span><span class="item-price">1200 грн</span></div>
+                    <img src="images/Фетр Большой.jpg" alt="Фетр Большой" class="product-img">
+                    <div class="item-details"><span class="item-name">Фетр Большой</span><span class="item-price">600 грн</span></div>
                 </label>
                 <div class="quantity-control"><input type="number" class="qty-input" value="1" min="1" disabled></div>
             </div>
 
-            <div class="product-item" data-id="c_skosh" data-name="СкошеныйМал" data-price="750">
+            <div class="product-item" data-id="c_skosh" data-name="СкошеныйМал" data-price="625">
                 <input type="checkbox" id="check-c3" class="product-checkbox" hidden>
                 <label for="check-c3" class="item-selector">
-                    <div class="img-placeholder">IMG</div>
-                    <div class="item-details"><span class="item-name">Скошеный Мал</span><span class="item-price">750 грн</span></div>
+                    <img src="images/Скошеный мал..jpg" alt="Скошеный Мал" class="product-img">
+                    <div class="item-details"><span class="item-name">Скошеный Мал</span><span class="item-price">625 грн</span></div>
                 </label>
                 <div class="quantity-control"><input type="number" class="qty-input" value="1" min="1" disabled></div>
             </div>
 
-            <div class="product-item" data-id="c_glass" data-name="Стакан" data-price="400">
+            <div class="product-item" data-id="c_glass" data-name="Стакан" data-price="300">
                 <input type="checkbox" id="check-c4" class="product-checkbox" hidden>
                 <label for="check-c4" class="item-selector">
-                    <div class="img-placeholder">IMG</div>
-                    <div class="item-details"><span class="item-name">Стакан</span><span class="item-price">400 грн</span></div>
+                    <img src="images/Стакан.jpg" alt="Стакан" class="product-img">
+                    <div class="item-details"><span class="item-name">Стакан</span><span class="item-price">300 грн</span></div>
                 </label>
                 <div class="quantity-control"><input type="number" class="qty-input" value="1" min="1" disabled></div>
             </div>
 
-            <div class="product-item" data-id="c_srkrmed" data-name="Ср.Кр.Средний" data-price="1000">
+            <div class="product-item" data-id="c_srkrmed" data-name="Ср.Кр.Средний" data-price="670">
                 <input type="checkbox" id="check-c5" class="product-checkbox" hidden>
                 <label for="check-c5" class="item-selector">
-                    <div class="img-placeholder">IMG</div>
-                    <div class="item-details"><span class="item-name">Ср.Кр.Средний</span><span class="item-price">1000 грн</span></div>
+                    <img src="images/Ср.кр.средний.jpg" alt="Ср.Кр.Средний" class="product-img">
+                    <div class="item-details"><span class="item-name">Ср.Кр.Средний</span><span class="item-price">670 грн</span></div>
                 </label>
                 <div class="quantity-control"><input type="number" class="qty-input" value="1" min="1" disabled></div>
             </div>
 
-            <div class="product-item" data-id="c_srkrbig" data-name="Ср.Кр.Большой" data-price="1500">
+            <div class="product-item" data-id="c_srkrbig" data-name="Ср.Кр.Большой" data-price="900">
                 <input type="checkbox" id="check-c6" class="product-checkbox" hidden>
                 <label for="check-c6" class="item-selector">
-                    <div class="img-placeholder">IMG</div>
-                    <div class="item-details"><span class="item-name">Ср.Кр.Большой</span><span class="item-price">1500 грн</span></div>
+                    <img src="images/Ср.кр.большой.jpg" alt="Ср.Кр.Большой" class="product-img">
+                    <div class="item-details"><span class="item-name">Ср.Кр.Большой</span><span class="item-price">900 грн</span></div>
                 </label>
                 <div class="quantity-control"><input type="number" class="qty-input" value="1" min="1" disabled></div>
             </div>
 
-            <div class="product-item" data-id="c_fetrmal" data-name="ФетрМал" data-price="600">
+            <div class="product-item" data-id="c_fetrmal" data-name="ФетрМал" data-price="250">
                 <input type="checkbox" id="check-c7" class="product-checkbox" hidden>
                 <label for="check-c7" class="item-selector">
-                    <div class="img-placeholder">IMG</div>
-                    <div class="item-details"><span class="item-name">Фетр Малый</span><span class="item-price">600 грн</span></div>
+                    <img src="images/Фетр мал..jpg" alt="Фетр Малый" class="product-img">
+                    <div class="item-details"><span class="item-name">Фетр Малый</span><span class="item-price">250 грн</span></div>
                 </label>
                 <div class="quantity-control"><input type="number" class="qty-input" value="1" min="1" disabled></div>
             </div>
 
-            <div class="product-item" data-id="c_asortibig" data-name="АсортиБольш" data-price="1400">
+            <div class="product-item" data-id="c_asortibig" data-name="АсортиБольш" data-price="2100">
                 <input type="checkbox" id="check-c8" class="product-checkbox" hidden>
                 <label for="check-c8" class="item-selector">
-                    <div class="img-placeholder">IMG</div>
-                    <div class="item-details"><span class="item-name">Ассорти Большое</span><span class="item-price">1400 грн</span></div>
+                    <img src="images/Ассорти больш..JPG" alt="Ассорти Большое" class="product-img">
+                    <div class="item-details"><span class="item-name">Ассорти Большое</span><span class="item-price">2100 грн</span></div>
                 </label>
                 <div class="quantity-control"><input type="number" class="qty-input" value="1" min="1" disabled></div>
             </div>
 
-            <div class="product-item" data-id="c_asortimal" data-name="АсортиМал" data-price="900">
+            <div class="product-item" data-id="c_asortimal" data-name="АсортиМал" data-price="1300">
                 <input type="checkbox" id="check-c9" class="product-checkbox" hidden>
                 <label for="check-c9" class="item-selector">
-                    <div class="img-placeholder">IMG</div>
-                    <div class="item-details"><span class="item-name">Ассорти Малое</span><span class="item-price">900 грн</span></div>
+                    <img src="images/Асорти маленьк.jpg" alt="Ассорти Малое" class="product-img">
+                    <div class="item-details"><span class="item-name">Ассорти Малое</span><span class="item-price">1300 грн</span></div>
                 </label>
                 <div class="quantity-control"><input type="number" class="qty-input" value="1" min="1" disabled></div>
             </div>
 
-            <div class="product-item" data-id="c_asortikr" data-name="Асорти.Ср.Кр" data-price="1100">
+            <div class="product-item" data-id="c_asortikr" data-name="Асорти.Ср.Кр" data-price="600">
                 <input type="checkbox" id="check-c10" class="product-checkbox" hidden>
                 <label for="check-c10" class="item-selector">
-                    <div class="img-placeholder">IMG</div>
-                    <div class="item-details"><span class="item-name">Ассорти Ср.Кр</span><span class="item-price">1100 грн</span></div>
+                    <img src="images/Ассорти ср.кр..jpg" alt="Ассорти Ср.Кр" class="product-img">
+                    <div class="item-details"><span class="item-name">Ассорти Ср.Кр</span><span class="item-price">600 грн</span></div>
                 </label>
                 <div class="quantity-control"><input type="number" class="qty-input" value="1" min="1" disabled></div>
             </div>
 
-            <div class="product-item" data-id="c_aqua" data-name="Аквариум" data-price="2000">
+            <div class="product-item" data-id="c_aqua" data-name="Аквариум" data-price="1390">
                 <input type="checkbox" id="check-c11" class="product-checkbox" hidden>
                 <label for="check-c11" class="item-selector">
-                    <div class="img-placeholder">IMG</div>
-                    <div class="item-details"><span class="item-name">Аквариум</span><span class="item-price">2000 грн</span></div>
+                    <img src="images/Аквариум.jpg" alt="Аквариум" class="product-img">
+                    <div class="item-details"><span class="item-name">Аквариум</span><span class="item-price">1390 грн</span></div>
                 </label>
                 <div class="quantity-control"><input type="number" class="qty-input" value="1" min="1" disabled></div>
             </div>
@@ -214,29 +232,29 @@
 
         <div id="tab-dops" class="tab-content">
             
-            <div class="product-item" data-id="d_packs" data-name="ПакетS" data-price="20">
+            <div class="product-item" data-id="d_packs" data-name="ПакетS" data-price="50">
                 <input type="checkbox" id="check-d1" class="product-checkbox" hidden>
                 <label for="check-d1" class="item-selector">
-                    <div class="img-placeholder">IMG</div>
-                    <div class="item-details"><span class="item-name">Пакет S</span><span class="item-price">20 грн</span></div>
+                    <img src="images/Пакет L.jpg" alt="Пакет S" class="product-img">
+                    <div class="item-details"><span class="item-name">Пакет S</span><span class="item-price">50 грн</span></div>
                 </label>
                 <div class="quantity-control"><input type="number" class="qty-input" value="1" min="1" disabled></div>
             </div>
 
-            <div class="product-item" data-id="d_packm" data-name="ПакетM" data-price="30">
+            <div class="product-item" data-id="d_packm" data-name="ПакетM" data-price="80">
                 <input type="checkbox" id="check-d2" class="product-checkbox" hidden>
                 <label for="check-d2" class="item-selector">
-                    <div class="img-placeholder">IMG</div>
-                    <div class="item-details"><span class="item-name">Пакет M</span><span class="item-price">30 грн</span></div>
+                    <img src="images/Пакет L.jpg" alt="Пакет M" class="product-img">
+                    <div class="item-details"><span class="item-name">Пакет M</span><span class="item-price">80 грн</span></div>
                 </label>
                 <div class="quantity-control"><input type="number" class="qty-input" value="1" min="1" disabled></div>
             </div>
 
-            <div class="product-item" data-id="d_packl" data-name="ПакетL" data-price="40">
+            <div class="product-item" data-id="d_packl" data-name="ПакетL" data-price="100">
                 <input type="checkbox" id="check-d3" class="product-checkbox" hidden>
                 <label for="check-d3" class="item-selector">
-                    <div class="img-placeholder">IMG</div>
-                    <div class="item-details"><span class="item-name">Пакет L</span><span class="item-price">40 грн</span></div>
+                    <img src="images/Пакет L.jpg" alt="Пакет L" class="product-img">
+                    <div class="item-details"><span class="item-name">Пакет L</span><span class="item-price">100 грн</span></div>
                 </label>
                 <div class="quantity-control"><input type="number" class="qty-input" value="1" min="1" disabled></div>
             </div>
@@ -244,17 +262,17 @@
             <div class="product-item" data-id="d_card" data-name="Откритка" data-price="25">
                 <input type="checkbox" id="check-d4" class="product-checkbox" hidden>
                 <label for="check-d4" class="item-selector">
-                    <div class="img-placeholder">IMG</div>
+                    <img src="images/Листивка.jpg" alt="Открытка" class="product-img">
                     <div class="item-details"><span class="item-name">Открытка</span><span class="item-price">25 грн</span></div>
                 </label>
                 <div class="quantity-control"><input type="number" class="qty-input" value="1" min="1" disabled></div>
             </div>
 
-            <div class="product-item" data-id="d_photo" data-name="Фото" data-price="15">
+            <div class="product-item" data-id="d_photo" data-name="Фото" data-price="95">
                 <input type="checkbox" id="check-d5" class="product-checkbox" hidden>
                 <label for="check-d5" class="item-selector">
-                    <div class="img-placeholder">IMG</div>
-                    <div class="item-details"><span class="item-name">Фото (Распечатка)</span><span class="item-price">15 грн</span></div>
+                    <img src="images/istockphoto-1018876022-1024x1024.jpg" alt="Фото" class="product-img">
+                    <div class="item-details"><span class="item-name">Фото (друк)</span><span class="item-price">95 грн</span></div>
                 </label>
                 <div class="quantity-control"><input type="number" class="qty-input" value="1" min="1" disabled></div>
             </div>
@@ -262,7 +280,7 @@
              <div class="product-item" data-id="d_margin" data-name="маржа" data-price="1">
                 <input type="checkbox" id="check-d6" class="product-checkbox" hidden>
                 <label for="check-d6" class="item-selector">
-                    <div class="img-placeholder">IMG</div>
+                    <img src="https://images.unsplash.com/photo-1563298723-dcfebaa392e3?w=150&q=80" alt="Маржа" class="product-img">
                     <div class="item-details"><span class="item-name">Маржа (Доп)</span><span class="item-price">1 грн</span></div>
                 </label>
                 <div class="quantity-control"><input type="number" class="qty-input" value="1" min="1" disabled></div>
@@ -304,12 +322,12 @@
         </div>
 
         <div class="input-group">
-            <input type="number" id="extraCharge" placeholder="Доп. Доходи/Розходи">
+            <input type="number" id="extraCharge" placeholder="+- гроші до замовлення">
         </div>
         
         <div class="input-group comment-with-photo">
     <div class="comment-wrapper">
-        <input type="text" id="orderComment" placeholder="Коментар до замовлення">
+        <input type="text" id="orderComment" placeholder="Коментар">
         <label for="photo-upload" class="photo-btn" id="photo-label" title="Завантажити фото">
             <i class="fas fa-camera"></i>
             <input type="file" id="photo-upload" accept="image/*" hidden onchange="handleFileSelect(this)">
